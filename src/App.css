@@ -1,38 +1,109 @@
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 40%;
+  background-color: black;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.container > span{
+  color: #fefdfd;
+  font-size: large;
+  margin-left: 40px;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.topdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 90%;
+  margin-top: 5px;
+}
+.topdiv2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 90%;
+  margin-top: 5px;
+}
+.topdiv2 > span {
+  display: flex;
+  height: 100%;
+  width: 20%;
+  color: rgb(237, 247, 247);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topdiv > span {
+  display: flex;
+  color: #181717;
+  height: 100%;
+  width: 20%;
+  background-color: rgb(18, 148, 148);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.topdiv > button {
+  display: flex;
+  color: #181717;
+  height: 100%;
+  width: 20%;
+  background-color: rgb(18, 148, 148);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.length {
+  display: flex;
+  background-color: #4541be;
+  color: #856ce9;
+  width:80%;
+  height: 5px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+input[type='range'] {
+  accent-color: blue;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+.grid > div{
+  display: grid;
+  border-radius: 8px;
+  color: #fefdfd;
+  margin-left: 10px;
+}
+.password {
+  display: flex;
+  background-color: rgb(73, 148, 123);
+  justify-content:center ;
+  align-items: center;
+  border-radius: 8px;
+  height: 40px;
+}
+.strength{
+  display: flex;
+  background:-moz-linear-gradient(to right, red 50%, rgb(39, 198, 148) 50%);
+  
+  height: 10px;
 }
